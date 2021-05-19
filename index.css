@@ -1,25 +1,35 @@
 
-body{
+*{
     
-    font-size: 15px;
     margin:0;
     padding:0;
-    background-color: hsl(0, 0%, 95%);
     
 }
+
+body{
+
+    background-color: hsl(0, 17%, 95%);
+    font-size: 15px;
+}
+
 main.contain{
+    
     display:flex;
     flex-direction:row;
     justify-content:center;
     align-items: center;
     height:100vh;
     flex-wrap: wrap;
+    border-radius: 20px;
 }
 
 div.body{
+    
     display:flex;
     flex-direction:column;
-    margin:10%;
+    margin: 5% 10%;
+    box-shadow: 5px 8px 10px rgb(124, 124, 124);
+ 
 }
 
 img{
@@ -39,6 +49,7 @@ p, button,.attribution a {
 }
 
 p{
+    padding-top: 20px;
     color: hsla(0, 0%, 100%, 0.75);
 }
 
@@ -46,7 +57,7 @@ h1,button{
     color: hsl(0, 0%, 95%);
 }
 .body section{
-    padding: 5rem;
+    padding: 4rem;
 }
 
 .first{
@@ -64,14 +75,9 @@ h1,button{
 }
 
 button{
-    width:200px;
+    width:170px;
 }
 
-button{
-    border: none;
-    padding: 1rem ;
-    border-radius:2rem;
-}
 .first button{
     color: hsl(31, 77%, 52%);
 }
@@ -83,10 +89,22 @@ button{
     color: hsl(179, 100%, 13%);
 }  
 
+button{
+    margin-top: 40px;
+    padding: 1rem ;
+    border-radius:2rem;
+    border-color:rgba(0, 0, 0, 0);
+    transition: color .4s ease-in-out;
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0);
+    color:hsla(0, 0%, 100%, 0.75);
+    border:2px solid hsla(0, 0%, 100%, 0.75);
+}
+
 
 .attribution {
-    position: relative;
-    top:-60px;
     text-align: center;
     color: hsl(0, 0%, 48%);
 }
@@ -101,7 +119,7 @@ button{
       color: hsl(228, 85%, 68%);
   }
 
-  @media(min-width:1000px) {
+  @media(min-width:1100px) {
 
     body{
         margin:0;
@@ -109,8 +127,8 @@ button{
      div.body{
          display:flex;
          flex-direction:row;
-         width: 1500px;
-         height:700px;
+         width: 1200px;
+         height:600px;
      }
       
      button{
